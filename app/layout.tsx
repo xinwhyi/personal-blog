@@ -1,24 +1,24 @@
-import './globals.css';
-import type { Metadata } from 'next';
-import { Inter } from 'next/font/google';
-import { Analytics } from '@vercel/analytics/react';
+import "./globals.css";
+import type { Metadata } from "next";
+import { Inter } from "next/font/google";
+import { Analytics } from "@vercel/analytics/react";
 
-const inter = Inter({ subsets: ['latin'] });
+const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://next-mdx-blog.vercel.app'),
+  metadataBase: new URL("https://xinwhyi.github.io"),
   alternates: {
-    canonical: '/'
+    canonical: "/",
   },
   title: {
-    default: 'John Smith',
-    template: '%s | John Smith'
+    default: "Xinyi Jiang",
+    template: "%s | Xinyi Jiang",
   },
-  description: 'My portfolio, blog, and personal website.'
+  description: "My portfolio, blog, and personal website.",
 };
 
 export default function RootLayout({
-  children
+  children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
@@ -39,10 +39,8 @@ export default function RootLayout({
 
 function Footer() {
   const links = [
-    { name: '@johnsmith', url: 'https://x.com/johnsmith' },
-    { name: 'youtube', url: 'https://www.youtube.com/@johnsmith' },
-    { name: 'linkedin', url: 'https://www.linkedin.com/in/johnsmith' },
-    { name: 'github', url: 'https://github.com/johnsmith' }
+    { name: "@xinwhyi", url: "https://x.com/xinwhyi" },
+    { name: "github", url: "https://github.com/xinwhyi" },
   ];
 
   return (
